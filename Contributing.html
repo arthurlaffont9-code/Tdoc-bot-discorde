@@ -1,236 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-<html data-theme="forest"></html>
+<html lang="en" data-theme="dracula">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" /> <!-- import daisyui  -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script><!-- import tailwindcss  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" /> <!-- import daisyui themes tout  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="themes.css">
-    <title>Tdoc</title>
+    <title>Contributing | Bot Discord</title>
 </head>
+
 <body class="font-['Plus_Jakarta_Sans']">
-<div class="drawer lg:drawer-open">
-  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+<div class="drawer lg:drawer-open min-h-screen">
+    <input id="my-drawer-4" type="checkbox" class="drawer-toggle">
 
-  <div class="drawer-content">
-    <nav class="navbar fixed w-full bg-base-300">
-      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost drawer-button lg:hidden">
-        ☰
-      </label>
-      <img class="h-15" src="assets/logo.png" alt="">
-      <div class="px-4 font-bold">Tdoc</div>
-    </nav>
+    <div class="drawer-content flex min-h-screen flex-col">
+        <nav class="navbar fixed top-0 z-40 w-full bg-base-300 shadow-sm">
+            <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost drawer-button lg:hidden">☰</label>
+            <img class="h-12 w-auto object-contain" src="assets/logo.png" alt="Discord Bot logo">
+            <div class="px-4 font-bold">bot-discord</div>
+        </nav>
 
-    <div class="mt-20 px-8 flex justify-center">
-    
-    <div class="w-fit text-left">
-        <h1 class="text-6xl font-bold mb-4">
-        Contributing to <span class="text-primary">Tdoc</span>
-        </h1>
+        <main class="mx-auto w-full max-w-5xl flex-1 px-4 pb-16 pt-28 md:px-8">
+            <header class="mb-12">
+                <h1 class="mb-4 text-4xl font-bold md:text-6xl">
+                    Contributing to <span class="text-primary">the bot</span>
+                </h1>
+                <p class="max-w-3xl text-lg opacity-80">
+                    Contributions help improve the Discord bot, its documentation and the experience of its users.
+                </p>
+            </header>
 
-        <p class="mt-10 text-4xl font-['Grape_Nuts']">Why contribute ?</p>
-        <p class="mt-5"> <big>Tdoc is open source and welcomes contributions. <br> Whether it's a typo, a new theme or a new feature, every contribution helps.</big> </p>
+            <section class="mb-12">
+                <h2 class="mb-4 font-['Grape_Nuts'] text-4xl text-primary">Why contribute?</h2>
+                <p class="max-w-3xl">
+                    You can help by reporting bugs, improving instructions, suggesting useful features or contributing code.
+                    If you are new to the project, start by describing the problem or idea clearly.
+                </p>
+            </section>
 
-        <h1 class="text-2xl mt-10">Ways to contribute :</h1>
+            <section class="mb-12">
+                <h2 class="mb-5 text-2xl font-bold">Ways to contribute</h2>
+                <div class="overflow-x-auto rounded-box border border-base-300 bg-base-200">
+                    <table class="table">
+                        <thead>
+                            <tr><th>Contribution</th><th>What to do</th><th>Difficulty</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr class="hover:bg-base-300"><td>Report a bug</td><td>Explain what happened and how to reproduce it.</td><td>Easy</td></tr>
+                            <tr class="hover:bg-base-300"><td>Improve documentation</td><td>Correct errors or clarify installation and configuration steps.</td><td>Easy</td></tr>
+                            <tr class="hover:bg-base-300"><td>Suggest a feature</td><td>Describe the feature and the problem it would solve.</td><td>Easy</td></tr>
+                            <tr class="hover:bg-base-300"><td>Contribute code</td><td>Implement a fix or feature after discussing it with the maintainers.</td><td>Intermediate</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-        <div class="overflow-x-auto rounded-box bg-neutral/30 justify-center flex mt-10">
-        <table class="table">
-            <!-- head -->
-            <thead>
-            <tr>
-                <th>Type</th>
-                <th>Description</th>
-                <th>Difficulty</th>
-            </tr>
-            </thead>
-            <tbody>
-            <!-- row 1 -->
-            <tr class="hover:bg-neutral">
-                <td>Report a bug</td>
-                <td>Open an issue on GitHub</td>
-                <td>Easy</td>
-            </tr>
-            <!-- row 2 -->
-            <tr class="hover:bg-neutral">
-                <td>Fix a typo</td>
-                <td>Edit the docs directly</td>
-                <td>Easy</td>
-            </tr>
-            <!-- row 3 -->
-            <tr class="hover:bg-neutral">
-                <td>Improve the docs</td>
-                <td>Add examples, clarify steps</td>
-                <td>Medium</td>
-            </tr>
+            <section class="mb-12">
+                <h2 class="mb-5 font-['Grape_Nuts'] text-4xl text-primary">How to contribute</h2>
+                <ol class="list-decimal space-y-4 pl-6">
+                    <li><strong>Check existing issues.</strong> Look for a similar report or proposal before opening a new one.</li>
+                    <li><strong>Explain your change.</strong> Describe the issue, expected behaviour and proposed solution.</li>
+                    <li><strong>Work on a separate branch.</strong> Keep your changes focused so they are easier to review.</li>
+                    <li><strong>Test your changes.</strong> Check that the bot or documentation still works as expected.</li>
+                    <li><strong>Submit your contribution.</strong> Open a pull request and explain what you changed.</li>
+                </ol>
 
-            <!-- row 4 -->
-            <tr class="hover:bg-neutral">
-                <td>Add a theme / component</td>
-                <td>Extend the template</td>
-                <td>Medium</td>
-            </tr>
+                <a class="btn btn-primary mt-6" href="https://github.com/PetitGameur404" target="_blank" rel="noopener noreferrer">
+                    Open the GitHub profile ↗
+                </a>
+            </section>
 
-             <!-- row 5 -->
-            <tr class="hover:bg-neutral">
-                <td>Translate</td>
-                <td>Add a new Language</td>
-                <td>Medium</td>
-            </tr>
-            </tbody>
-        </table>
-        </div>
+            <div role="alert" class="alert alert-info alert-soft mb-6">
+                <span>ⓘ</span>
+                <span>Be respectful, protect private information and never include Discord bot tokens, passwords or other secrets in issues or commits.</span>
+            </div>
 
+            <section>
+                <h2 class="mb-3 text-2xl font-bold">Before submitting</h2>
+                <ul class="list-disc space-y-2 pl-6">
+                    <li>Keep changes consistent with the existing project.</li>
+                    <li>Write clear descriptions and commit messages.</li>
+                    <li>Do not commit tokens, credentials or private server information.</li>
+                    <li>Document any new commands or configuration options.</li>
+                </ul>
+            </section>
+        </main>
 
-        <p class="mt-10 text-4xl font-['Grape_Nuts']">Step-by-step how to contribute ?</p>
-        <p class="mt-5 text-xl">1) In a fisrt time you need to fork the repository</p>
-
-        <img class="mt-5 rounded-box" src="assets/fork.png" alt="fork examples">
-
-        <p class="mt-10">For fork the project is very easy go to <a class="text-secondary font-bold" href="https://github.com/PetitGameur404/Tdoc/t">Tdoc repository</a>. <br> and click on the Fork button you can refere with the image above.</p>
-
-        <p class="mt-5 text-xl">2) Clone, branch and push</p>
-
-        <div class="mockup-code mt-5" id="git-code"></div>
-
-         <div role="alert" class="alert alert-warning alert-soft mt-5">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0 stroke-current" fill="none" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-          </svg>
-          <span> Please Keep the same code style (Tailwind + DaisyUI classe only) if you dont use the same style your contribution or reject. <a class="font-bold" href="https://daisyui.com/docs/">reference of the daisyUI components</a>. <br>
-                 Test your code in light and dark themes and finaly write commits in English.
-        </span>
-        </div>
-
-        <div role="alert" class="alert alert-info alert-soft mt-5">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="h-6 w-6 shrink-0 stroke-current">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-          </svg>
-          <span>Be kind and respectful</span>
-        </div>
-
-        <p class="mt-10">If you are unsure how to make changes without affecting other aspects of the appearance,<br> you can refer to the design page.</p>
-
-        <h1 class="mt-10 text-4xl font-['Grape_Nuts'] text-primary">Thanks you very much for your contribution and help Tdoc to grow in popularity</h1>
-
-        
-
-
-
-
+        <footer class="footer sm:footer-horizontal justify-evenly border-t border-base-content/10 bg-base-300 p-10">
+            <aside>
+                <img class="h-16 w-auto object-contain" src="assets/logo.png" alt="Discord Bot logo">
+                <p>bot-discord<br>Discord bot project documentation<br>Designed and documented by Luca Hallet and Arthur Laffont.</p>
+            </aside>
+            <nav>
+                <h6 class="footer-title">Project</h6>
+                <a href="index.html" class="link link-hover">Homepage</a>
+                <a href="install.html" class="link link-hover">Installation</a>
+                <a href="config.html" class="link link-hover">Configuration</a>
+                <a href="Contributing.html" class="link link-hover">Contributing</a>
+                <a href="credits.html" class="link link-hover">Credits</a>
+            </nav>
+            <nav>
+                <h6 class="footer-title">Resources</h6>
+                <a href="https://discord.com/" target="_blank" rel="noopener noreferrer" class="link link-hover">Discord</a>
+                <a href="https://github.com/PetitGameur404" target="_blank" rel="noopener noreferrer" class="link link-hover">GitHub</a>
+            </nav>
+        </footer>
     </div>
-</div>
 
-
-<footer class="footer sm:footer-horizontal justify-evenly bg-default text-neutral-content p-10 mt-20 border-t-1 border-neutral">
-  <aside>
-      <img class="h-20" src="assets/logo.png" alt="">
-    <p>
-      Tdoc.
-      <br />
-      Open Source documentation,<br>
-      Designed and build by <a class="text-secondary underline" href="https://lucahallet.com">Luca Hallet</a> and <a class="text-secondary underline" href="#">Arthur Laffont</a>
-    </p>
-    <div class="flex flex-col">
-      <div class="divider divider-neutral w-100"></div>
-      <p>Code licensed <a class="underline font-medium" href="https://github.com/PetitGameur404/Tdoc/blob/main/LICENSE">MIT</a>, docs a <a class="underline font-medium" href="https://github.com/PetitGameur404/Tdoc/blob/main/LICENSE-DOCS.md">CC BY-SA 4.0.</a> Currently <strong>v1</strong></p>
-    </div>
-  </aside>
-  <nav>
-    <h6 class="footer-title">Social</h6>
-    <div class="flex flex-row items-center gap-4">
-      <a href="https://x.com/PetitGameurLive">
-        <svg
-          aria-label="Twitter"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          class="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a href="https://github.com/PetitGameur404">
-        <img class="h-8" src="assets/GitHub_Invertocat_White_Clearspace.svg" alt="">
-      </a>
-    </div>
-  </nav>
-</footer>
-
-</div>
-
-  <div class="drawer-side">
-    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
-
-    <ul class="menu bg-base-200 min-h-full w-64 p-4">
-      <li>
-        <h2 class="menu-title">First step</h2>
-        <ul>
-          <li><a href="index.html" class="menu-active">Homepage</a></li>
+    <div class="drawer-side z-50">
+        <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+        <ul class="menu min-h-full w-64 bg-base-200 p-4">
+            <li><h2 class="menu-title">First step</h2><ul><li><a href="index.html">Homepage</a></li></ul></li>
+            <li><h2 class="menu-title">Guide</h2><ul>
+                <li><a href="install.html">Installation</a></li>
+            </ul></li>
+            <li><h2 class="menu-title">Other</h2><ul>
+                <li><a href="Contributing.html" class="active">Contributing</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul></li>
         </ul>
-      </li>
-
-      <li>
-        <h2 class="menu-title">Guide</h2>
-        <ul>
-          <li><a href="install.html">Installation</a></li>
-          <li><a href="config.html">Configuration</a></li>
-          <li><a href="custom.html">Customize</a></li>
-        </ul>
-      </li>
-      <h2 class="menu-title">Other</h2>
-      <ul>
-          <li><a href="design.html">Design</a></li>
-          <li><a href="Contributing.html">Contributing</a></li>
-          <li><a href="credits.html">Credits</a></li>
-    </ul>
-  </div>
+    </div>
 </div>
-
 </body>
 </html>
-
-<script>
-const gitLines = [
-  'git clone https://github.com/PetitGameur404/Tdoc.git',
-  'cd tdoc',
-  'git checkout -b my-feature',
-  '# make your changes...',
-  'git add .',
-  'git commit -m "Add my feature"',
-  'git push origin my-feature'
-];
-
-function renderMockup(gitLines, lines) {
-  const container = document.getElementById(gitLines);
-  lines.forEach((line, i) => {
-    const pre = document.createElement("pre");
-    pre.setAttribute("data-prefix", i + 1);
-    const code = document.createElement("code");
-    code.textContent = line;
-    pre.appendChild(code);
-    container.appendChild(pre);
-  });
-}
-
-
-
-  const container = document.getElementById("git-code");
-
-  gitLines.forEach((line, index) => {
-    const pre = document.createElement("pre");
-    pre.setAttribute("data-prefix", index + 1);
-
-    const code = document.createElement("code");
-    code.textContent = line;
-
-    pre.appendChild(code);
-    container.appendChild(pre);
-  });
-
-</script>

@@ -1,0 +1,413 @@
+```html
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="themes.css">
+
+    <title>Bot Discord | Installation</title>
+</head>
+
+<body class="font-['Plus_Jakarta_Sans']">
+
+<div class="drawer lg:drawer-open min-h-screen">
+
+    <input id="my-drawer-4" type="checkbox" class="drawer-toggle">
+
+    <!-- Main content -->
+    <div class="drawer-content flex min-h-screen flex-col">
+
+        <!-- Navigation -->
+        <nav class="navbar fixed top-0 z-40 w-full bg-base-300 shadow-sm">
+            <label for="my-drawer-4"
+                   aria-label="open sidebar"
+                   class="btn btn-square btn-ghost drawer-button lg:hidden">
+                ☰
+            </label>
+
+            <img class="h-12 w-auto object-contain"
+                 src="assets/logo.png"
+                 alt="Discord Bot Logo">
+
+            <div class="px-4 font-bold">
+                bot-discord
+            </div>
+        </nav>
+
+        <!-- Page content -->
+        <main class="flex-1 px-4 pt-28 pb-16">
+
+            <!-- Hero -->
+            <header class="mx-auto mb-16 max-w-4xl text-center">
+                <h1 class="mb-5 text-4xl font-bold md:text-6xl">
+                    Get your <span class="text-primary">Discord bot</span>
+                </h1>
+
+                <p class="mx-auto max-w-2xl text-base opacity-80 md:text-lg">
+                    Follow this guide to add the bot to your Discord server,
+                    authorize it and get started.
+                </p>
+            </header>
+
+            <!-- Installation steps -->
+            <div class="mx-auto w-full max-w-4xl">
+
+                <!-- STEP 01 -->
+                <section class="mb-16">
+                    <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">
+                        Step 01
+                    </p>
+
+                    <h2 class="text-3xl font-bold">
+                        Discord account
+                    </h2>
+
+                    <p class="mt-3 max-w-3xl opacity-80">
+                        You need a Discord account and a server where you have
+                        permission to add bots.
+                    </p>
+
+                    <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
+
+                        <div class="card border border-base-300 bg-base-200">
+                            <div class="card-body items-start">
+                                <h3 class="card-title">Already have an account?</h3>
+
+                                <p class="opacity-80">
+                                    Log in to your existing Discord account.
+                                </p>
+
+                                <a href="https://discord.com/login"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn mt-3 border-[#5865F2] bg-[#5865F2] text-white hover:bg-[#4752C4]">
+                                    Login with Discord ↗
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="card border border-base-300 bg-base-200">
+                            <div class="card-body items-start">
+                                <h3 class="card-title">New to Discord?</h3>
+
+                                <p class="opacity-80">
+                                    Create an account before continuing.
+                                </p>
+
+                                <a href="https://discord.com/register"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="btn btn-primary mt-3">
+                                    Create an account ↗
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- STEP 02 -->
+                <section class="mb-16">
+                    <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">
+                        Step 02
+                    </p>
+
+                    <h2 class="text-3xl font-bold">
+                        Get the bot
+                    </h2>
+
+                    <p class="mt-3 max-w-3xl opacity-80">
+                        To add the bot to your server, you need its official
+                        invitation link. Ask the bot's creator or check the
+                        project's official page to find it.
+                    </p>
+
+                    <div class="card mt-6 border border-base-300 bg-base-200">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                Official bot invitation
+                            </h3>
+
+                            <p class="opacity-70">
+                                Use the invitation link provided by the developer.
+                            </p>
+
+                            <div role="alert" class="alert alert-info alert-soft mt-3">
+                                <span>ⓘ</span>
+                                <span>
+                                    The bot's invitation link has not been provided yet.
+                                    Do not use a random link from an unknown source.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- STEP 03 -->
+                <section class="mb-16">
+                    <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">
+                        Step 03
+                    </p>
+
+                    <h2 class="text-3xl font-bold">
+                        Choose your server
+                    </h2>
+
+                    <p class="mt-3 max-w-3xl opacity-80">
+                        Open the official invitation link. Discord will ask you
+                        which server you want to add the bot to.
+                    </p>
+
+                    <div class="card mt-6 border border-base-300 bg-base-200">
+                        <div class="card-body">
+                            <h3 class="card-title">Before continuing</h3>
+
+                            <ul class="list-disc space-y-2 pl-5">
+                                <li>Select the correct server from the list.</li>
+                                <li>Make sure you have permission to manage that server.</li>
+                                <li>If the server is missing, check your server permissions.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- STEP 04 -->
+                <section class="mb-16">
+                    <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">
+                        Step 04
+                    </p>
+
+                    <h2 class="text-3xl font-bold">
+                        Authorize the bot
+                    </h2>
+
+                    <p class="mt-3 max-w-3xl opacity-80">
+                        Review the permissions requested by the bot before
+                        confirming the authorization.
+                    </p>
+
+                    <div class="card mt-6 border border-base-300 bg-base-200">
+                        <div class="card-body">
+                            <h3 class="card-title">Check the permissions</h3>
+
+                            <ul class="list-disc space-y-2 pl-5">
+                                <li>Read the permissions requested by the bot.</li>
+                                <li>Make sure the requested access is appropriate.</li>
+                                <li>Click Authorize to complete the process.</li>
+                            </ul>
+
+                            <div role="alert" class="alert alert-warning alert-soft mt-3">
+                                <span>!</span>
+                                <span>
+                                    Only authorize bots from a source you trust.
+                                    Never share your Discord password or token.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- STEP 05 -->
+                <section class="mb-16">
+                    <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">
+                        Step 05
+                    </p>
+
+                    <h2 class="text-3xl font-bold">
+                        Check the installation
+                    </h2>
+
+                    <p class="mt-3 max-w-3xl opacity-80">
+                        Once authorized, return to your Discord server and
+                        check that the bot has joined successfully.
+                    </p>
+
+                    <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-2">
+
+                        <div class="card border border-base-300 bg-base-200">
+                            <div class="card-body">
+                                <h3 class="card-title">Bot is visible</h3>
+
+                                <p class="opacity-80">
+                                    Look for the bot in the server member list.
+                                    Its online status may depend on whether it is running.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card border border-base-300 bg-base-200">
+                            <div class="card-body">
+                                <h3 class="card-title">Bot is not responding</h3>
+
+                                <p class="opacity-80">
+                                    Check its permissions and make sure the developer
+                                    has the bot running.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- STEP 06 -->
+                <section>
+                    <p class="mb-2 font-['Grape_Nuts'] text-3xl text-primary">
+                        Step 06
+                    </p>
+
+                    <h2 class="text-3xl font-bold">
+                        Configure your bot
+                    </h2>
+
+                    <p class="mt-3 max-w-3xl opacity-80">
+                        Your bot may provide tools for server management and
+                        questionnaires. Available features depend on the
+                        actual bot implementation.
+                    </p>
+
+                    <div class="card mt-6 border border-base-300 bg-base-200">
+                        <div class="card-body">
+                            <h3 class="card-title">Ready to get started?</h3>
+
+                            <p class="opacity-80">
+                                Check the bot's available commands, help messages
+                                or documentation to learn how to use its features.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer sm:footer-horizontal justify-evenly border-t border-base-content/10 bg-base-300 p-10">
+
+            <aside>
+                <img class="h-20 w-auto object-contain"
+                     src="assets/logo.png"
+                     alt="Discord Bot Logo">
+
+                <p>
+                    bot-discord
+                    <br>
+                    Discord bot project documentation
+                    <br>
+                    Designed and documented by
+                    <a class="text-secondary underline" href="https://lucahallet.com">
+                        Luca Hallet
+                    </a>
+                    and
+                    <a class="text-secondary underline" href="#">
+                        Arthur Laffont
+                    </a>
+                </p>
+
+                <div class="flex flex-col">
+                    <div class="divider divider-neutral w-full"></div>
+
+                    <p>
+                        Project information and credits:
+                        <a class="font-medium underline" href="credits.html">
+                            Credits
+                        </a>
+                    </p>
+                </div>
+            </aside>
+
+            <nav>
+                <h6 class="footer-title">Project</h6>
+
+                <a href="index.html" class="link link-hover">Homepage</a>
+                <a href="install.html" class="link link-hover">Installation</a>
+                <a href="config.html" class="link link-hover">Configuration</a>
+                <a href="custom.html" class="link link-hover">Customization</a>
+                <a href="Contributing.html" class="link link-hover">Contributing</a>
+                <a href="credits.html" class="link link-hover">Credits</a>
+            </nav>
+
+            <nav>
+                <h6 class="footer-title">Resources</h6>
+
+                <a href="https://discord.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="link link-hover">
+                    Discord
+                </a>
+
+                <a href="https://hackclub.com/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="link link-hover">
+                    Hack Club
+                </a>
+
+                <a href="https://github.com/PetitGameur404"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="link link-hover">
+                    GitHub
+                </a>
+            </nav>
+
+        </footer>
+
+    </div>
+
+    <!-- Sidebar -->
+    <div class="drawer-side z-50">
+
+        <label for="my-drawer-4"
+               aria-label="close sidebar"
+               class="drawer-overlay">
+        </label>
+
+        <ul class="menu min-h-full w-64 bg-base-200 p-4">
+
+            <li>
+                <h2 class="menu-title">First step</h2>
+
+                <ul>
+                    <li>
+                        <a href="index.html">Homepage</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h2 class="menu-title">Guide</h2>
+
+                <ul>
+                    <li>
+                        <a href="install.html" class="active">Installation</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <h2 class="menu-title">Other</h2>
+
+                <ul>
+                    <li><a href="Contributing.html">Contributing</a></li>
+                    <li><a href="credits.html">Credits</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+
+</body>
+</html>
