@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dracula">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="themes.css">
+    <title>Conmende | Bot Discord</title>
+</head>
+<body class="font-['Plus_Jakarta_Sans']">
+
+<div class="drawer lg:drawer-open">
+  <input id="my-drawer-4" type="checkbox" class="drawer-toggle" />
+
+
+  <div class="drawer-content flex flex-col">
+    
+  
+    <nav class="navbar fixed w-full bg-base-300 z-50">
+      <label for="my-drawer-4" aria-label="open sidebar" class="btn btn-square btn-ghost drawer-button lg:hidden">
+        ☰
+      </label>
+      <img class="h-15" src="assets/logo.png" alt="Logo">
+      <div class="px-4 font-bold">Tdoc</div>
+    </nav>
+
+
+    <div class="mt-24 px-8 flex justify-center flex-grow">
+      <div class="w-full max-w-4xl text-left mb-16">
+        <h1 class="text-6xl font-bold mb-4">
+          Command your <span class="text-primary">dracula</span>
+        </h1>
+        <p class="text-xl text-base-content/70 mb-10">
+         Discover the list of commands available for interacting with the bot and configuring your space.
+        </p>
+
+
+       
+        <div class="space-y-8">
+          
+        
+          <div class="card card-border bg-base-200">
+            <div class="card-body">
+              <span class="badge badge-primary">Commande 01</span>
+              <h2 class="card-title text-2xl font-bold font-['Grape_Nuts']">The first command?</h2>
+              
+              <div class="mockup-code w-full my-2">
+                <pre data-prefix="$"><code>/setup</code></pre>
+              </div>
+
+              <img src="assets/setep.png" alt="Interface /setup" class="rounded-xl h-120 object-cover w-full= my-2 border border-base-200">
+              <p class="text-sm text-base-content/80">
+               This is the text that appears on Discord when you type the command <code>/setup</code>.
+              </p>
+
+              <div class="divider my-4">Account creation</div>
+
+              <img src="assets/create compte.png" alt="Interface Créer un compte" class="rounded-xl h-120 object-cover w-full my-2 border border-base-300">
+              <p class="text-sm text-base-content/80">
+              This is the interface that appears when you click "Create an account." Simply enter your email address to receive a unique verification code.
+              </p>
+            </div>
+          </div>
+
+          <!-- Commande 2 -->
+          <div class="card card-border bg-base-200">
+            <div class="card-body">
+              <span class="badge badge-primary">Commande 02</span>
+              <h2 class="card-title text-2xl font-bold font-['Grape_Nuts']">The second command?</h2>
+              
+              <div class="mockup-code w-full my-2">
+                <pre data-prefix="$"><code>/help</code></pre>
+              </div>
+
+              <img src="assets/help.png" alt="Interface /help" class="rounded-xl h-120 object-cover w-full my-2 border border-base-300">
+              <p class="text-sm text-base-content/80">
+                By executing the command<code>/help</code>, you instantly display the complete list of all commands available for use by the bot on the server.
+              </p>
+            </div>
+          </div>
+
+          <!-- Commande 3 -->
+          <div class="card card-border bg-base-200">
+            <div class="card-body">
+              <span class="badge badge-primary">Commande 03</span>
+              <h2 class="card-title text-2xl font-bold font-['Grape_Nuts']">The third command?</h2>
+              
+              <div class="mockup-code w-full my-2">
+                <pre data-prefix="$"><code>/admin-panel</code></pre>
+              </div>
+
+              <p class="text-sm text-base-content/80">
+              Order fulfillment  <code>/admin-panel</code> opens access to the administration panel, allowing you to list and track all users who have an active account on the server.
+              </p>
+            </div>
+          </div>
+
+          <!-- Commande 4 -->
+          <div class="card card-border bg-base-200">
+            <div class="card-body">
+              <span class="badge badge-primary">Commande 04</span>
+              <h2 class="card-title text-2xl font-bold font-['Grape_Nuts']">The fourth command?</h2>
+              
+              <div class="mockup-code w-full my-2">
+                <pre data-prefix="$"><code>/ping</code></pre>
+              </div>
+
+              <p class="text-sm text-base-content/80">
+                La commande <code>/ping</code>allows you to instantly test the latency and status of the real-time communication between the bot and Discord's servers.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Section Variables d'environnement -->
+        <div class="divider mt-16 mb-8">Fichier de Configuration .env</div>
+        <pre class="overflow-x-auto rounded-xl border border-base-300 bg-base-300 p-4 text-sm mb-6"><code id="env-example">DISCORD_TOKEN="YOUR_DISCORD_BOT_TOKEN"
+RESEND="re_YOUR_API_KEY"
+MAIL_PWD="YOUR_SMTP_PASSWORD"
+MAIL_FORM='mymail@example.com'
+SMTP_SERVER='://example.com'
+MAIL_USERNAME='mymail@example.com'
+MAIL_PORT=587</code></pre> 
+
+        <!-- Tableau descriptif des Variables -->
+        <div class="overflow-x-auto">
+          <table class="table table-sm w-full border border-base-300 rounded-xl bg-base-200/50">
+            <thead>
+              <tr class="bg-base-300 text-base-content">
+                <th>Variable</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><code>DISCORD_TOKEN</code></td><td>Your Discord bot token.</td></tr>
+              <tr><td><code>RESEND</code></td><td>Your Resend API key, if your code uses this service.</td></tr>
+              <tr><td><code>MAIL_PWD</code></td><td>Your SMTP password or provider-specific SMTP secret.</td></tr>
+              <tr><td><code>MAIL_FORM</code></td><td>The sender email address expected by your code. Check the exact variable name in your code.</td></tr>
+              <tr><td><code>SMTP_SERVER</code></td><td>The address of your SMTP server.</td></tr>
+              <tr><td><code>MAIL_USERNAME</code></td><td>The username used for SMTP authentication, often an email address.</td></tr>
+              <tr><td><code>MAIL_PORT</code></td><td>The SMTP port. <code>587</code> is commonly used with STARTTLS.</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer global -->
+    <footer class="footer sm:footer-horizontal justify-evenly border-t border-base-content/10 bg-base-300 p-10 w-full mt-auto">
+      <aside>
+        <img class="h-16 w-auto object-contain" src="assets/logo.png" alt="Discord Bot logo">
+        <p>bot-discord<br>Discord bot project documentation<br>Designed and documented by Luca Hallet and Arthur Laffont.</p>
+      </aside>
+      <nav>
+        <h6 class="footer-title">Project</h6>
+        <a href="index.html" class="link link-hover">Homepage</a>
+        <a href="install.html" class="link link-hover">Installation</a>
+        <a href="config.html" class="link link-hover">Configuration</a>
+        <a href="Contributing.html" class="link link-hover">Contributing</a>
+        <a href="credits.html" class="link link-hover">Credits</a>
+      </nav>
+      <nav>
+        <h6 class="footer-title">Resources</h6>
+        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="link link-hover">Discord</a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="link link-hover">GitHub</a>
+      </nav>
+    </footer>
+  </div>
+
+  <!-- Barre latérale de navigation (Drawer-Side) -->
+  <div class="drawer-side">
+    <label for="my-drawer-4" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu min-h-full w-64 bg-base-200 p-4 pt-20 lg:pt-4">
+      <li>
+        <h2 class="menu-title">First step</h2>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="menu-title">Guide</h2>
+        <ul>
+          <li><a href="install.html">Install</a></li>
+          <li><a href="comende.html" class="active">Commandes</a></li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="menu-title">Other</h2>
+        <ul>
+          <li><a href="Contributing.html">Contributing</a></li>
+          <li><a href="credits.html">Credits</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
